@@ -1,0 +1,230 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.about-container {
+  max-width: 100%;
+  margin: 50px auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f8f9fa;
+}
+
+.logo {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.logo img {
+  max-width: 100px;
+  height: auto;
+}
+
+.vision-heading,
+.jumia-heading,
+.ceo-heading {
+  font-family: 'Roboto', sans-serif;
+  color: #007bff;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.vision-container,
+.jumia-today-container,
+.ceo-container {
+  max-width: 800px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.jumia-grid,
+.vision-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid */
+  gap: 20px;
+}
+
+.jumia-item,
+.vision-item {
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  flex-direction: column; /* Ensure items stack vertically on small screens */
+  text-align: center; /* Center text within items */
+}
+
+.jumia-item i,
+.vision-item i {
+  color: orangered;
+  margin-bottom: 10px; /* Space between icon and text */
+}
+
+.jumia-item strong,
+.vision-item span {
+  font-family: 'Lora', serif;
+  font-weight: bold;
+}
+
+.ceo-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.ceo-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.ceo-description {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  color: #333;
+  line-height: 1.6;
+  margin: 0 20px;
+}
+
+.ceo-role {
+  background-color: #042331;
+  margin-top: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.ceo-role i {
+  margin-right: 10px;
+  font-size: 24px;
+  color: white;
+}
+
+/* Adjust .jumia-grid for larger screens */
+@media (min-width: 992px) {
+  .jumia-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .jumia-item {
+    flex: 0 1 calc(25% - 20px); /* Adjust width for 4 items per row with gap */
+  }
+}
+
+/* Additional media query for responsiveness */
+@media (max-width: 768px) {
+  .about-container {
+    padding: 15px;
+  }
+
+  .logo img {
+    max-width: 80px;
+  }
+
+  .vision-heading,
+  .jumia-heading,
+  .ceo-heading {
+    font-size: 24px;
+  }
+
+  .vision-item,
+  .jumia-item {
+    font-size: 16px;
+    padding: 10px; /* Reduce padding for smaller items */
+  }
+
+  .ceo-description {
+    font-size: 16px;
+  }
+
+  .ceo-role {
+    font-size: 16px;
+  }
+
+  .ceo-image {
+    width: 120px;
+    height: 120px;
+  }
+}
+* Feature section styles */
+.feature-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: whitesmoke;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 1200px;
+  font-family: 'Lucida Console', Monaco, monospace; /* Feature section font */
+}
+
+.feature-box {
+  text-align: center;
+  width: 45%;
+  margin-bottom: 20px;
+  font-family: 'Arial Black', Gadget, sans-serif; /* Feature box font */
+}
+
+.icon-wrapper {
+  display: inline-block;
+  position: relative;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+}
+
+.icon-background {
+  position: absolute;
+  top: 60%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  width: 90px;
+  height: 90px;
+  background-color: orange;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-background i {
+  color: white;
+  font-size: 24px;
+}
+
+.feature-title {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.feature-description {
+  color: #666;
+  font-size: 14px;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+  .feature-box {
+    width: 100%;
+  }
+}

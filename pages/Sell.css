@@ -1,0 +1,103 @@
+.sell-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 120px;
+}
+
+.navbar-container {
+  width:90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-collapse {
+  flex-grow: 0;
+}
+
+.content-container {
+
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.loading-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.success-message {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.card {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.instructions {
+  background-color: orange;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.brand-orange {
+  color: orange;
+}
+
+.brand-red {
+  color: red;
+}
+
+.nav-link {
+  margin: 0 10px;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #004085;
+}
+
+.icon {
+  margin-right: 5px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .content-container {
+    padding: 0 15px;
+  }
+
+  .navbar-collapse {
+    justify-content: center;
+  }
+
+  .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-link {
+    margin: 10px 0;
+  }
+
+  .card {
+    margin-bottom: 20px;
+  }
+}

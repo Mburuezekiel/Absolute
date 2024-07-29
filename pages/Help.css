@@ -1,0 +1,45 @@
+/* Help.css */
+.help-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .help-section {
+    margin-bottom: 20px;
+  }
+  
+  .terms-section {
+    margin-top: 40px;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }
+  
+  @media (max-width: 768px) {
+    .help-container {
+      padding: 10px;
+    }
+  
+    .btn-primary {
+      display: block;
+      width: 100%;
+      text-align: center;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .help-section {
+      padding: 10px;
+    }
+  }
+  
