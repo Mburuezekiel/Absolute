@@ -1,0 +1,23 @@
+[
+    {
+      "_id": "1",
+      "product_name": "Product 1",
+      "product_category": "Category 1",
+      "product_description": "Description for product 1",
+      "product_price": 100,
+      "product_quantity": 10,
+      "product_location": "Location 1",
+      "product_image": "path/to/image1.jpg"
+    },
+    {
+      "_id": "2",
+      "product_name": "Product 2",
+      "product_category": "Category 2",
+      "product_description": "Description for product 2",
+      "product_price": 200,
+      "product_quantity": 20,
+      "product_location": "Location 2",
+      "product_image": "path/to/image2.jpg"
+    }
+  ]
+  
